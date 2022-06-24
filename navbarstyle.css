@@ -1,0 +1,399 @@
+*{
+    box-sizing : border-box;
+    margin : 0;
+    padding :0;
+  }
+  body{
+    overflow-x: hidden;
+  }
+  .header{
+      background-color: #262626;
+      width: 100%;
+      height: 100vh;
+  }   
+  li{
+      list-style: none;
+  }
+  a{
+      color: white;
+      text-decoration: none;
+  }
+  .number{
+      color: white;
+  }
+  .nav-logo img{
+      width: 150px;
+      height: 60px;
+  }
+  .navbar{
+      min-height: 110px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 0 24px;
+
+  }
+  .nav-menu{
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap:60px;
+  }
+
+  .nav-link{
+      transition: 0.7s ease;
+  }
+  .nav-link:hover{
+      color: blue;
+      cursor: pointer;
+  }
+  .hamburger{
+      display: none;
+      cursor: pointer;
+  }
+  .bar{
+      display: block;
+      width: 25px;
+      height: 3px;
+      margin: 5px auto;
+      -webkit-transition: all 0.3s ease-in-out;
+      transition: all 0.3s ease-in-out;
+      background-color: white;
+
+  }
+
+
+  @media(max-width:768px) {
+ 
+    .con{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+      .hamburger{
+          display: block;
+      }
+      .hamburger.active .bar:nth-child(2){
+          opacity: 0;
+      }
+      .hamburger.active .bar:nth-child(1){
+          transform: translateY(8px) rotate(45deg);
+      }
+      .hamburger.active .bar:nth-child(3){
+          transform: translateY(-8px) rotate(-45deg);
+      }
+      .nav-menu{
+          position: fixed;
+          left: -100%;
+          top: 110px;
+          gap: 0;
+          flex-direction: column;
+          background-color: #262626;
+          width: 100%;
+          text-align: center;
+          transition: 0.3s;
+      }
+      .nav-item{
+          margin: 16px 0;
+      }
+      .nav-menu.active{
+          left: 0;
+      }
+      .v{
+         margin-top: 123px;
+      }
+      .col-q{
+        justify-content: center;
+        margin-left: 0px;
+        text-align: center;
+        font-size: 3rem;
+     }
+     .row{
+        display: flex;
+        flex-direction: column;
+     }
+     
+     .cpack{ 
+         display: flex;
+        flex-direction: column;
+        margin-top: 30px;
+     }
+     .card1{
+      margin-top: 20px;
+     }
+     .footer{
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      padding: 10px 0px;
+      margin-top: 50px;
+     }
+     .footer .f3{
+      padding-left: 0px;
+     }
+     .footer .office1{
+      margin-left: 0%;
+      margin-top: 40px;
+     }
+     .footer .f3{
+      margin-top: 30px;
+     }
+     .line1{
+      display: none;
+     }
+     .social .fa{
+      width: 10px;
+      height: 10px;
+      margin-left: 10px;
+     }
+     .social .fab{
+      font-size: 0.5rem;
+     }
+     
+  }
+   
+     .v{
+          width: 100%;
+          padding: 0px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          background-color: brown;
+     }
+
+     .v video{
+        max-width: 99vw;
+        max-height: 75vh;
+        
+     }
+
+     .about{
+       
+        width: 100%;
+        height: 50%;
+     }
+
+     .about h1{
+         text-align: center;
+         margin-top: 60px;
+         font-size: 2.5rem;
+         font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+     }
+     
+     .con{
+        margin-top: 50px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+     }
+
+     .con .col{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+     }
+
+     .col-q{
+        width: 35%;
+        
+     }
+
+     .col-q h2{
+        margin-left: 0px;
+        text-align: center;
+        font-size: 2.5rem;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+     }
+     .col-textsec{
+        width: 65%;
+        display: flex;
+        align-items: center;
+        text-align: justify;
+        font-size: 1.17rem;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif    ;
+        justify-content: center;
+        padding: 15px;
+     }
+   
+     .row{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding-top: 50px;
+        padding-left: 0px;
+     }
+
+     .card1{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;   
+        padding: 0px 13px;
+        margin-left: 15px;
+        margin-bottom: 10px;
+     }
+      
+     .card1 .c{
+        display: flex;
+        flex-direction: column;
+     }
+      .c-slogo img{
+        width: 120px;
+        height: 120px;
+     }
+     
+     .c-heading{
+        margin: 12px 0px;
+     }
+
+     .c-heading h2{
+        font-size: 1rem;
+        
+        font-weight: bold;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+     }
+     .c-details{
+        justify-content: center;
+        text-align: center;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+     }
+     .im1{
+        color: skyblue;
+     }
+
+     /* client section */
+     .client{
+        width: 100%;
+        height: 70%;
+     }
+     .client h1{
+        text-align: center;
+        margin-top: 60px;
+        font-size: 2.5rem;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+     .cpack{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+     }
+     .clogo{
+        width: 30%;
+        display: flex;
+        justify-content: center;
+     }
+     .clogo img{
+        width: 170px;
+        height: 170px;
+     }
+     .cdetails{
+        width: 70%;
+        padding: 0px 20px;
+        text-align: justify;
+     }
+     .cpack h3{
+        font-size: 1.8rem;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+     }
+     .cpack p{
+        font-size: 1rem;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+     }
+     .footer{
+      background-color: whitesmoke;
+      padding: 10px 50px;
+      padding-top: 50px;
+      width: 100%;
+      height: 100%;
+      display: flex;
+     }
+     .office1{
+      margin-left: 20px;
+      width: 25%;
+     }
+     .off1 img{
+      width: 120px;
+      height: 120px;
+      background-color: whitesmoke;
+     }
+     .off1-details{
+      width: 300px;
+     }
+     .off1-details h3{
+   
+       margin-top: 30px;
+       font-size: 1.1rem;
+       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+     }
+     .off1-details p{
+      margin-top: 20px;
+      width: 200px;
+      font-size: 0.8rem;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+     }
+     
+     .f3{
+      background-color: whitesmoke;
+      display: flex;
+      flex-direction: column;
+      padding: 20px 50px;
+     }
+     .f3 .ser-sec{
+      display: flex;
+      flex-direction: column;
+      padding: 20px 0px;
+      
+     }
+
+     .ser-sec a{
+      
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+      font-size: 0.7rem;  
+   }
+     .f3 a{
+      color: black;
+      margin-top: 3px;
+      font-size: 0.89rem;
+     }
+     .f3 i{
+      color: black;
+     }
+
+     .social{
+      margin-top: 40px;
+      width: 120%;
+     }
+     .social .fa{
+      width: 40px;
+      height: 40px;
+      border-radius: 50px;
+      background-color: lightgray;
+      color: black;
+      padding: 12px 0px 0px 0px;
+      
+      text-align:left;
+      margin-left: 10px;
+     }
+     .social .fab{
+      font-size: 0.8rem;
+     }
+     .f3 h2{
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+     }
+     .f3 .line{
+      width: 100%;
+      height: 0.1px;
+      background-color: lightgray;
+     }
+     .footer .line1{
+      width: 0.1px;
+     background-color: lightgray;
+     }
+     .footer .line2{
+      width: 1.1px;
+     background-color: lightgray;
+     }
+     
